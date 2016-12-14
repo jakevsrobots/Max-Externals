@@ -5,3 +5,5 @@ Max/MSP externals:
 
 - turing, a clone of the Music Thing Turing Machine Random Looping
   Sequencer.
+
+- bitmush, bitwise logic on lists of bits with an expr-like interface.

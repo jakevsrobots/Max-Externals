@@ -11,6 +11,7 @@
 typedef struct _bitmush
 {
   t_object obj;
+  char *expr;
 } t_bitmush;
   
 ///////////////////////// function prototypes
@@ -26,7 +27,7 @@ void ext_main(void *r)
 {
   t_class *c;
 
-  c = class_new("bitmush", (method)bitmush_new, (method)NULL, sizeof(t_turing), NULL, A_GIMME, 0);
+  c = class_new("bitmush", (method)bitmush_new, (method)NULL, sizeof(t_bitmush), NULL, A_GIMME, 0);
   
   class_register(CLASS_BOX, c);
   
@@ -37,9 +38,14 @@ void ext_main(void *r)
 
 void *bitmush_new(t_symbol *s, long argc, t_atom *argv)
 {
-  t_turing *x = (t_turing *)object_alloc(s_turing_class);
-  
-  attr_args_process(x, argc, argv);
+  t_bitmush *x = (t_bitmush *)object_alloc(s_bitmush_class);
+
+  if(argc == 1)
+    {
+      t_symbol *expr_sym = atom_getsym(argv);
+      x->expr = malloc(strlen(expr_sym->s_name) * sizeof(x->expr));
+      strcpy(x->expr, expr_sym->s_name);
+    }
   
   return x;
 }

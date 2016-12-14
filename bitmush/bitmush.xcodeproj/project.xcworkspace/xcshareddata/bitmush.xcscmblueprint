@@ -7,14 +7,14 @@
     "BD56383EB25B3853F2895BCFCF37A11A0E220DCF" : 9223372036854775807,
     "20DC6287C6D318433B681296E0BF364C4882CD47" : 9223372036854775807
   },
-  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "17077859-5955-4158-A4F3-4B1D834F0000",
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8365DA3D-8B41-4310-95CE-E95FB5CD7D4C",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "BD56383EB25B3853F2895BCFCF37A11A0E220DCF" : "externals\/",
     "20DC6287C6D318433B681296E0BF364C4882CD47" : ".."
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "bitmush",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "bitlogic\/bitmush.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "bitmush\/bitmush.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Cycling74\/max-sdk.git",
